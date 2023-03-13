@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<!------------------------>
+<!---Title of the Product-->
+<!------------------------>
+<title>Your Shopping Cart</title>
+<!------------------------>
+<!---Linking of CSS-->
+<!------------------------>
+ <link rel="stylesheet" type="text/css" href="C:\Users\simon\OneDrive\Desktop\awp project\common.css">
+    
+ <!------------------------>
+<!---Linking of Google Fonts-->
+<!------------------------>
+<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Merriweather:wght@700&family=Overpass:wght@300&family=Playfair+Display:wght@500&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Sora&display=swap" rel="stylesheet">
+ <!------------------------>
+<!---Fevicon of the Project-->
+<!------------------------>
+ <link rel="icon" href="common/icon.png">
+    <link href="file:///C:/Users/simon/OneDrive/Desktop/awp%20project/cart.html" rel="cart">
+
+ <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
+</head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+
+    
+    
+ <!------------------------>
+<!---Upper Navigation-->
+<!------------------------>
+  <div class="upper_nav">
+
+
+
+  <!------------------------>
+<!---Logo linking to the home page-->
+<!------------------------>
+<span class="logo"><a href="landing_page.html"><img src="images/logo.jpg" alt="The Picture will be Loaded Soon"></a></span>
+
+
+   <!------------------------>
+<!---Div for the search bar-->
+<!------------------------>
+<div class="fill">
+    <span class="entry"><input type="text" placeholder="Search for products, brands and more">
+     <button class="button">
+      <img src="images/logo2.png" alt="The Picture will be Loaded Soon">
+     </button></span>
+   </div>
+
+
+   <!------------------------>
+<!---Linking to the SIGN IN and Login Page-->
+<!------------------------>
+   <span class="sign"><a href="cart.html">CART</a><span class="items">0</span></span>
+
+
+<!--------------------------------->
+<!---Drop Down for More Options-->
+<!-------------------------------->
+<div id="dropdown">
+    <link rel="cart" href="cart.html">
+    <span class="dropbtn">MORE<ion-icon name="caret-down" class="dropdown"></ion-icon></span>
+	<span class="dropdown-head"></span>
+    <div class="dropdown-content">
+     <a>Membership</a>
+     <a>Login / Sign In</a>
+     <a>Feedback Form</a>
+    </div>
+   </div>
+  </div>
+
+
+  <!--------------------------------->
+<!---Middle Navigation Bar-->
+<!-------------------------------->
+  <div class="mid_nav">
+      <link rel="cart" href="cart.html"/>
+   <a href="electronics.html">Electronics & Accessories</a>
+   <a href="sports.html">Sports & Fitness</a>
+   <a href="furniture.html">Furniture & Living</a>
+   <a href="b&e.html">Books & Entertainment</a>
+  </div>
+  <div class="cart">
+      <link rel="cart" href="cart.html"/>
+  <div class = "products-container">
+  <div class = "product-header">
+	<span class = "product-title">PRODUCT</span>
+	<span class = "price">PRICE</span>
+	<span class = "quantity">QUANTITY</span>
+	<span class = "total">TOTAL</span>
+  </div>
+        <div class="product" href="cart.css">
+    <div class="product-image">
+      <img src="images/book1.jpg">
+    </div>
+    <div class="product-details">
+      <div class="product-title">Harry Potter Box Set</div>
+        <p class="product-description">The Complete Collection (Set of 7 Volumes) </p>
+    </div>
+    <div class="product-price">₹4,250</div>
+    <div class="product-quantity">
+      <input type="number" value="2" min="1">
+    </div>
+   
+    <div class="product-line-price">₹4,250</div>
+  </div>
+      <div class="totals">
+    <div class="totals-item">
+      <label>Subtotal</label>
+      <div class="totals-value" id="cart-subtotal">₹4,250</div>
+    </div>
+    <div class="totals-item">
+      <label>Tax (5%)</label>
+      <div class="totals-value" id="cart-tax">10.60</div>
+    </div>
+    <div class="totals-item">
+      <label>Shipping</label>
+      <div class="totals-value" id="cart-shipping">75.00</div>
+    </div>
+    <div class="totals-item totals-item-total">
+      <label>Grand Total</label>
+      <div class="totals-value" id="cart-total">₹4,335</div>
+    </div>
+  </div>
+      
+      <button class="checkout">Checkout</button>
+
+</div>
+  </div>
+  <script src="JavaScript/ElectronicsJava.js"></script>
+  <script src="JavaScript/FashionJava.js"></script>
+  <script src="JavaScript/SportsJava.js"></script>
+  <script src="JavaScript/FurnitureJava.js"></script>
+  <script src="JavaScript/B&EJava.js"></script>
+    </div>
+  </body>
+  </html>
